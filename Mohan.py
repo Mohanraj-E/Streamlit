@@ -1,7 +1,7 @@
 import streamlit as st
 
 def main_page():
-    st.header('Census Data 201.')
+    st.header('Census Data')
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Census_Data ")#github link
     st.header("Explaination")
@@ -11,7 +11,8 @@ def main_page():
      I have performed data preprocessing like\n
      1.groupby function\n
      2.add prefix and suffix to column name\n
-     3.creating and deleting the column\n""")
+     3.Creating and deleting the column\n
+     4.Visualization using plotly""")
     st.markdown("""using pandas library in python and you can see the source code on my github account""")
     st.sidebar.header("Description:")
     st.sidebar.markdown('''
@@ -39,8 +40,24 @@ Need to analyse the data and find how the sales is according to the price of the
 Data_Set link:
 ''')
     
-    
 def page3():
+    st.header("DataBase Management")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/DataBase%20Management")#github link
+    st.header("Explaination")
+    st.markdown("""I have performed data management process like\n
+     1.Creating a new database in MySQL server and adding data file\n
+     2.Creating a new database in NoSQL(MongoDB) server and add data file\n
+     3.Retrive the data from the NoSQL(MongoDB) server and adding it into a MySQL server\n""")
+    st.markdown("""using pandas and matplotlib library in python and you can see the source code on my github account""")
+    st.sidebar.header("Description:")
+    st.sidebar.markdown('''
+The process describe the creating new database , tabels , collections , coverting into dataframe and converting into dictionary. \n
+Data_Set link:
+''')
+    
+    
+def page4():
     st.header("Registration")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Assignment-1/blob/main/Assignment-1.ipynb")#github link
@@ -67,7 +84,8 @@ def page3():
 page_names_to_funcs = {
     "Census_data": main_page,
     "Sales_insight": page2,
-    "Registeration_Python": page3,
+    "DataBase Management": page3,
+    "Registeration_Python": page4,
 }
 st.sidebar.header("Data_Analyst Project")
 selected_page = st.sidebar.selectbox("Select a Project", page_names_to_funcs.keys())
