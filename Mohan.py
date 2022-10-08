@@ -60,7 +60,7 @@ Data_Set link:
 def page4():
     st.header("Registration")
     st.subheader('Github link')
-    st.write("https://github.com/Mohanraj-E/Assignment-1/blob/main/Assignment-1.ipynb")#github link
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Registration")#github link
     st.header("Explaination")
     st.markdown("""This project is given by GUVI institution and it has to be done using python
      under the concept of File handling
