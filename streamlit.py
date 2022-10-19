@@ -116,3 +116,4 @@ def main_page():
     selected_page = st.sidebar.selectbox(datascience.keys())
     datascience[selected_page]() 
 
+main_page()
