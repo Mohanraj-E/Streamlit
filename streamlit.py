@@ -1,6 +1,6 @@
 import streamlit as st
 
-def main_page():
+def page1():
     st.header('Census Data')
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Census_Data ")#github link
@@ -79,7 +79,7 @@ def page4():
     and full explaination is given in the main page''' )   
 
 page_names_to_funcs = {
-    "Census_data": main_page,
+    "Census_data": page1,
     "Sales_insight": page2,
     "DataBase Management": page3,
     "Registeration_Python": page4,
