@@ -78,7 +78,14 @@ def page4():
     with a concept of file handling,The Jupyter notebook link 
     and full explaination is given in the main page''' )   
 
-page_names_to_funcs = {
+def E_Mail():
+    st.header("E-Mail Verification")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/E-Mail%20Verification")
+    
+    
+    
+Data_analysis_funcs = {
     "Census_data": page1,
     "Sales_insight": page2,
     "DataBase Management": page3,
@@ -87,15 +94,25 @@ page_names_to_funcs = {
 
 def Data_analysis():
     st.sidebar.header("Data Analysis Project") 
-    Choice = st.sidebar.selectbox("Select a Project", page_names_to_funcs.keys())
-    page_names_to_funcs[Choice]()
+    Choice = st.sidebar.selectbox("Select a Project", Data_analysis_funcs.keys())
+    Data_analysis_funcs[Choice]()
+ 
+Machine_learnings_funcs = {
+    "E-Mail Verification": E_Mail,
+}
 
+def Machine_learning():
+    st.sidebar.header("Machine Learning Project") 
+    Ml_Choice = st.sidebar.selectbox("Select a Project", Machine_learnings_funcs.keys())
+    Machine_learnings_funcs[Ml_Choice]()
+    
 
 datascience={
     "Data analysis" : Data_analysis,
+    "Machine Learning : Machine_learning,
     }
 
 st.sidebar.header("Data Science Project")
-selected_page = st.sidebar.selectbox("Select a Project", datascience.keys())
+selected_page = st.sidebar.selectbox(datascience.keys())
 datascience[selected_page]() 
 
