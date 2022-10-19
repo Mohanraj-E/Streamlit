@@ -1,5 +1,6 @@
 import streamlit as st
 
+# Data Analysis function
 def Census_Data():
     st.header('Census Data')
     st.subheader('Github link')
@@ -52,7 +53,6 @@ def DataBase_Management():
     st.sidebar.markdown('''
 The process describe the creating new database , tabels , collections , coverting into dataframe and converting into dictionary.
 ''')
-    
     
 def Registration():
     st.header("Registration")
@@ -107,7 +107,7 @@ def College_Data():
      3. Department wise codekata performenc - Data Visualization\n
      4. Department wise toppers - Data Visualization\n""")
     
-    
+# Machine Learning Function
 def E_Mail():
     st.header("E-Mail Verification")
     st.subheader('Github link')
@@ -120,8 +120,11 @@ def E_Mail():
      2.Split the data into Train and Test datasets\n
      3.Using sklearn.model --> train_test_split\n
      4.Creating a model which Accepts user input and determine wether it is Spam or Not Spam""")
+
     
     
+    
+# Selecting the Data Analysis Project    
 Data_analysis_funcs = {
     "Census_data": Census_Data,
     "Sales_insight": Sales_insight,
@@ -133,23 +136,29 @@ Data_analysis_funcs = {
 
 def Data_analysis():
     st.sidebar.header("Data Analysis Project") 
-    Choice = st.sidebar.selectbox("Select a Project", Data_analysis_funcs.keys())
+    Choice = st.sidebar.selectbox("Select the Project", Data_analysis_funcs.keys())
     Data_analysis_funcs[Choice]()
  
+
+
+
+# Selecting the Machine Learning Project
 Machine_learnings_funcs = {
     "E-Mail Verification": E_Mail,
 }
 
 def Machine_learning():
     st.sidebar.header("Machine Learning Project") 
-    Ml_Choice = st.sidebar.selectbox("Select a Project", Machine_learnings_funcs.keys())
+    Ml_Choice = st.sidebar.selectbox("Select the Project", Machine_learnings_funcs.keys())
     Machine_learnings_funcs[Ml_Choice]()
     
 
+    
+# Selecting the Topic
 datascience={
     "Data analysis" : Data_analysis,
     "Machine Learning" : Machine_learning,
     }
 st.sidebar.header("Data Science Project")
-selected_page = st.sidebar.selectbox("Select The Topic",datascience.keys())
+selected_page = st.sidebar.selectbox("Select the topic",datascience.keys())
 datascience[selected_page]() 
