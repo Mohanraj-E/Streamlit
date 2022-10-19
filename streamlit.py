@@ -93,7 +93,6 @@ def Data_analysis():
 
 datascience={
     "Data analysis" : Data_analysis,
-    "Machine Learning" : Machine_Learning,
     }
 
 st.sidebar.header("Data Science Project")
