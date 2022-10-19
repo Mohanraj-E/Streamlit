@@ -78,17 +78,6 @@ def page4():
     with a concept of file handling,The Jupyter notebook link 
     and full explaination is given in the main page''' )   
 
-
-
-datascience={
-    "Data analysis" : Data_analysis,
-    "Machine Learning" : Machine_Learning,
-    }
-
-st.sidebar.header("Data Science Project")
-selected_page = st.sidebar.selectbox("Select a Project", datascience.keys())
-datascience[selected_page]() 
-
 page_names_to_funcs = {
     "Census_data": main_page,
     "Sales_insight": page2,
@@ -100,3 +89,14 @@ def Data_analysis():
     st.sidebar.header("Data Analysis Project") 
     Choice = st.sidebar.selectbox("Select a Project", page_names_to_funcs.keys())
     page_names_to_funcs[Choice]()
+
+
+datascience={
+    "Data analysis" : Data_analysis,
+    "Machine Learning" : Machine_Learning,
+    }
+
+st.sidebar.header("Data Science Project")
+selected_page = st.sidebar.selectbox("Select a Project", datascience.keys())
+datascience[selected_page]() 
+
