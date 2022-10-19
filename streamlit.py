@@ -1,6 +1,6 @@
 import streamlit as st
 
-def page1():
+def Census_Data():
     st.header('Census Data')
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Census_Data ")#github link
@@ -20,7 +20,7 @@ The dataset describe the india census data according to state-wise
 Need to analyse the data and find the unemployment in statewise. 
 ''')
     
-def page2():
+def Sales_insight():
     st.header("Sales insight")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Sales_Insight")#github link
@@ -38,7 +38,7 @@ The dataset describe the Sales according to every month
 Need to analyse the data and find how the sales is according to the price of the product.
 ''')
     
-def page3():
+def DataBase_Management():
     st.header("DataBase Management")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/DataBase%20Management")#github link
@@ -54,7 +54,7 @@ The process describe the creating new database , tabels , collections , covertin
 ''')
     
     
-def page4():
+def Registration():
     st.header("Registration")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Registration")#github link
@@ -77,19 +77,58 @@ def page4():
     The project is to create a registration form using python code 
     with a concept of file handling,The Jupyter notebook link 
     and full explaination is given in the main page''' )   
-
+    
+def Netflix_data():
+    st.header("Netflix data")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Netflix_Dataset ")#github link
+    st.header("Explaination")
+    st.markdown("""The project I have taken from API and the Netflix data has
+     Show_Id,Category,Title,Director,Cast,Country,Release_Date,Rating,Duration,Type,Description 
+     I have performed data cleaning process like\n
+     1. Handling the missing value\n
+     2. Duplicate handling\n
+     3. Datetime function\n""")
+    st.markdown("""using pandas library in python and you can see the source code on my github account""")
+    st.sidebar.header("Description:")
+    st.sidebar.markdown('''
+The dataset describe the Netflix data according to username
+Need to analyse the data and find how many people are subscribed ''')
+    
+def College_Data():
+    st.header("College Data")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/College%20Data")#github link
+    st.header("Explaination")
+    st.markdown("""This project given to me by Guvi Institution as an assessment. 
+    In this project the following process are done:\n
+     1. Merging Two DataFrame into Single DataFrame.\n
+     2. Creating Different CSV file to the data which classified Based on their scores.\n
+     3. Department wise codekata performenc - Data Visualization\n
+     4. Department wise toppers - Data Visualization\n""")
+    
+    
 def E_Mail():
     st.header("E-Mail Verification")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/E-Mail%20Verification")
-    
+    st.header("Explaination")
+    st.markdown("""In this project I created and train the Machine learning Model to verify the incoming Mail 
+                    i.e in this case an user input and report whether it is Spam or Not-Spam.
+     I have performed data preprocessing like\n
+     1.Creatied a column using one hot encoding\n
+     2.Split the data into Train and Test datasets\n
+     3.Using sklearn.model --> train_test_split\n
+     4.Creating a model which Accepts user input and determine wether it is Spam or Not Spam""")
     
     
 Data_analysis_funcs = {
-    "Census_data": page1,
-    "Sales_insight": page2,
-    "DataBase Management": page3,
-    "Registeration_Python": page4,
+    "Census_data": Census_Data,
+    "Sales_insight": Sales_insight,
+    "DataBase Management": DataBase_Management,
+    "Registeration_Python": Registration,
+    "Netflix_data" : Netflix_data,
+    "College_Data" : College_Data,
 }
 
 def Data_analysis():
@@ -111,9 +150,6 @@ datascience={
     "Data analysis" : Data_analysis,
     "Machine Learning" : Machine_learning,
     }
-def main_page():
-    st.sidebar.header("Data Science Project")
-    selected_page = st.sidebar.selectbox("Select a Project",datascience.keys())
-    datascience[selected_page]() 
-
-main_page()
+st.sidebar.header("Data Science Project")
+selected_page = st.sidebar.selectbox("Select The Topic",datascience.keys())
+datascience[selected_page]() 
