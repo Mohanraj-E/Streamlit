@@ -113,7 +113,7 @@ datascience={
     }
 def main_page():
     st.sidebar.header("Data Science Project")
-    selected_page = st.sidebar.selectbox(datascience.keys())
+    selected_page = st.sidebar.selectbox("Select a Project",datascience.keys())
     datascience[selected_page]() 
 
 main_page()
