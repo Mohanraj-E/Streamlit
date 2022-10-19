@@ -116,7 +116,7 @@ def E_Mail():
     st.markdown("""In this project I created and train the Machine learning Model to verify the incoming Mail 
                     i.e in this case an user input and report whether it is Spam or Not-Spam.
      I have performed data preprocessing like\n
-     1.Creatied a column using one hot encoding\n
+     1.Created a column using one hot encoding\n
      2.Split the data into Train and Test datasets\n
      3.Using sklearn.model --> train_test_split\n
      4.Creating a model which Accepts user input and determine wether it is Spam or Not Spam""")
