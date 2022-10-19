@@ -1,13 +1,5 @@
 import streamlit as st
 
-def main():
-  st.title("Data-Science-Projects")
-  
-  choice=st.sidebar.selectbox("SubMenu",["Census Data","Sales insight","DataBase Management","Registration"])
-  if submenu == "Census Data":
-
-import streamlit as st
-
 def main_page():
     st.header('Census Data')
     st.subheader('Github link')
