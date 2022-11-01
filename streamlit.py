@@ -83,7 +83,7 @@ def Netflix_data():
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Netflix_Dataset ")#github link
     st.header("Explaination")
     st.markdown("""The project I have taken from API and the Netflix data has
-     Show_Id,Category,Title,Director,Cast,Country,Release_Date,Rating,Duration,Type,Description 
+     Show_Id,Category,Title,Director,Cast,Country,Release_Date,Rating,Duration,Type,Description.\n
      I have performed data cleaning process like\n
      1. Handling the missing value\n
      2. Duplicate handling\n
@@ -99,7 +99,7 @@ def College_Data():
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/College%20Data")#github link
     st.header("Explaination")
-    st.markdown("""This project given to me by Guvi Institution as an assessment. 
+    st.markdown("""This project given to me by Guvi Institution as an assessment.\n
     In this project the following process are done:\n
      1. Merging Two DataFrame into Single DataFrame.\n
      2. Creating Different CSV file to the data which classified Based on their scores.\n
@@ -141,9 +141,9 @@ def Credit_Card():
     st.header("Explaination")
     st.markdown("""In this project I created and train the Machine learning Model for Credit Card Fraud Detection using Logistic Regression.\n
      I have performed data preprocessing like\n
-     1.Split the data into Train and Test datasets\n
-     2.Using RandomUnderSampler from imblearn.under_sampling
-     3.Using Logistic Regression model form sklearn.linear_model for prediction \n""")
+     1.Split the data into Train and Test datasets.\n
+     2.Using RandomUnderSampler from imblearn.under_sampling.\n
+     3.Using Logistic Regression model form sklearn.linear_model for prediction.\n""")
 
 def Oil_Price():
     st.header("Oil Price Prediction")
