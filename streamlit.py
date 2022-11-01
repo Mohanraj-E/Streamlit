@@ -6,14 +6,13 @@ def Census_Data():
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Census_Data ")#github link
     st.header("Explaination")
-    st.markdown("""The project is taken from API and the Census data has
-     District_code,State_name,District_name,Population,Male,Female,Literate,Workers,Male_Workers,Female_Workers,Christians,
-     Sikhs,Buddhists,Jains,Secondary_Education,Higher_Education,Graduate_Education,Age_Group_0_29,Age_Group_30_49,Age_Group_50.
+    st.markdown("""This project is given by GUVI institution.\n
      I have performed data preprocessing like\n
-     1.groupby function\n
-     2.add prefix and suffix to column name\n
-     3.Creating and deleting the column\n
-     4.Visualization using plotly""")
+        1. Data cleaning process using python library pandas.\n
+        2. Census data with various feature.\n
+        3. Data importing.\n
+        4. Pandas groupby,agg,max,min,mean,mode,median.\n
+        5. Walkthrough some Mongodb concept.""")
     st.markdown("""using pandas library in python and you can see the source code on my github account""")
     st.sidebar.header("Description:")
     st.sidebar.markdown('''
@@ -27,7 +26,7 @@ def Sales_insight():
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Sales_Insight")#github link
     st.header("Explaination")
     st.markdown("""The project is taken from API and the Sales insight data which has
-     Multiple csv with the column name of Order ID,Product,Quantity Ordered,Price Each,Order Date,Purchase Address.
+     Multiple csv with the column name of Order ID,Product,Quantity Ordered,Price Each,Order Date,Purchase Address.\n
      I have performed data cleaning process like\n
      1.merge the multiple csv to one csv file\n
      2.type casting the datatype\n
@@ -112,7 +111,7 @@ def Student_Data_Insight():
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Mongodb%20Case%20Study/Student%20Data%20Insight")#github link
     st.header("Explaination")
-    st.markdown("""This project given to me by Guvi Institution as an assessment. 
+    st.markdown("""This project given to me by Guvi Institution as an assessment.\n
     In this task I perform various quries using:\n
      1.Unwind.\n
      2.Aggregate.\n
@@ -128,7 +127,7 @@ def E_Mail():
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/E-Mail%20Verification")
     st.header("Explaination")
     st.markdown("""In this project I created and train the Machine learning Model to verify the incoming Mail 
-                    i.e in this case an user input and report whether it is Spam or Not-Spam.
+                    i.e in this case an user input and report whether it is Spam or Not-Spam.\n
      I have performed data preprocessing like\n
      1.Created a column using one hot encoding\n
      2.Split the data into Train and Test datasets\n
@@ -140,7 +139,7 @@ def Credit_Card():
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/Credit%20Card%20Fraud%20Detection")
     st.header("Explaination")
-    st.markdown("""In this project I created and train the Machine learning Model for Credit Card Fraud Detection using Logistic Regression
+    st.markdown("""In this project I created and train the Machine learning Model for Credit Card Fraud Detection using Logistic Regression.\n
      I have performed data preprocessing like\n
      1.Split the data into Train and Test datasets\n
      2.Using RandomUnderSampler from imblearn.under_sampling
@@ -151,7 +150,7 @@ def Oil_Price():
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/Oil%20Price%20Prediction")
     st.header("Explaination")
-    st.markdown("""In this project I created and train the Machine learning Model for Oil Price Prediction using Linear Regression
+    st.markdown("""In this project I created and train the Machine learning Model for Oil Price Prediction using Linear Regression.\n
      I have performed data preprocessing like\n
      1.Split the data into Train and Test datasets\n
      2.Using Linear Regression model form sklearn.linear_model for prediction\n""")
