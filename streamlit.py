@@ -158,13 +158,15 @@ def Oil_Price():
     
 # Selecting the Data Analysis Project    
 Data_analysis_funcs = {
+    "College_Data" : College_Data,
+    "DataBase Management": DataBase_Management,
+    "Student Data Insight" : Student_Data_Insight,
+    "Registeration_Python": Registration,
     "Census_data": Census_Data,
     "Sales_insight": Sales_insight,
-    "DataBase Management": DataBase_Management,
-    "Registeration_Python": Registration,
     "Netflix_data" : Netflix_data,
-    "College_Data" : College_Data,
-    "Student Data Insight" : Student_Data_Insight,
+    
+    
 }
 
 def Data_analysis():
