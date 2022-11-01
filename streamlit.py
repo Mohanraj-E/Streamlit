@@ -13,7 +13,6 @@ def Census_Data():
         3. Data importing.\n
         4. Pandas groupby,agg,max,min,mean,mode,median.\n
         5. Walkthrough some Mongodb concept.""")
-    st.markdown("""using pandas library in python and you can see the source code on my github account""")
     st.sidebar.header("Description:")
     st.sidebar.markdown('''
 The dataset describe the india census data according to state-wise
