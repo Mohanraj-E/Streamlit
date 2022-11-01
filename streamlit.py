@@ -106,6 +106,20 @@ def College_Data():
      2. Creating Different CSV file to the data which classified Based on their scores.\n
      3. Department wise codekata performenc - Data Visualization\n
      4. Department wise toppers - Data Visualization\n""")
+
+def Student_Data_Insight():
+    st.header("Student Data Insight")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Mongodb%20Case%20Study/Student%20Data%20Insight")#github link
+    st.header("Explaination")
+    st.markdown("""This project given to me by Guvi Institution as an assessment. 
+    In this task I perform various quries using:\n
+     1.Unwind.\n
+     2.Aggregate.\n
+     3.Projection\n""")
+    
+    
+    
     
 # Machine Learning Function
 def E_Mail():
@@ -118,10 +132,29 @@ def E_Mail():
      I have performed data preprocessing like\n
      1.Created a column using one hot encoding\n
      2.Split the data into Train and Test datasets\n
-     3.Using sklearn.model --> train_test_split\n
+     3.Using MultinomialNB model form sklearn.naive_bayes for prediction \n
      4.Creating a model which Accepts user input and determine wether it is Spam or Not Spam""")
-
     
+def Credit_Card():
+    st.header("Credit Card Fraud Detection")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/Credit%20Card%20Fraud%20Detection")
+    st.header("Explaination")
+    st.markdown("""In this project I created and train the Machine learning Model for Credit Card Fraud Detection using Logistic Regression
+     I have performed data preprocessing like\n
+     1.Split the data into Train and Test datasets\n
+     2.Using RandomUnderSampler from imblearn.under_sampling
+     3.Using Logistic Regression model form sklearn.linear_model for prediction \n""")
+
+def Oil_Price():
+    st.header("Oil Price Prediction")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/Oil%20Price%20Prediction")
+    st.header("Explaination")
+    st.markdown("""In this project I created and train the Machine learning Model for Oil Price Prediction using Linear Regression
+     I have performed data preprocessing like\n
+     1.Split the data into Train and Test datasets\n
+     2.Using Linear Regression model form sklearn.linear_model for prediction\n""")
     
     
 # Selecting the Data Analysis Project    
@@ -132,6 +165,7 @@ Data_analysis_funcs = {
     "Registeration_Python": Registration,
     "Netflix_data" : Netflix_data,
     "College_Data" : College_Data,
+    "Student Data Insight" : Student_Data_Insight,
 }
 
 def Data_analysis():
@@ -145,6 +179,8 @@ def Data_analysis():
 # Selecting the Machine Learning Project
 Machine_learnings_funcs = {
     "E-Mail Verification": E_Mail,
+    "Credit Card Fraud Detection": Credit_Card,
+    "Oil Price Prediction": Oil_Price,
 }
 
 def Machine_learning():
