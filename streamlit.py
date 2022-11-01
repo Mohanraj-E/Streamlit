@@ -2,7 +2,7 @@ import streamlit as st
 
 # Data Analysis function
 def Census_Data():
-    st.header('Census Data')
+    st.header('Census Data Insight')
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Census_Data ")#github link
     st.header("Explaination")
@@ -78,7 +78,7 @@ def Registration():
     and full explaination is given in the main page''' )   
     
 def Netflix_data():
-    st.header("Netflix data")
+    st.header("Netflix Data Insight")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Netflix_Dataset ")#github link
     st.header("Explaination")
@@ -95,7 +95,7 @@ The dataset describe the Netflix data according to username
 Need to analyse the data and find how many people are subscribed ''')
     
 def College_Data():
-    st.header("College Data")
+    st.header("College Data Insight")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/College%20Data")#github link
     st.header("Explaination")
