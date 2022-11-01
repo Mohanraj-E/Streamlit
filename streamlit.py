@@ -13,29 +13,18 @@ def Census_Data():
         3. Data importing.\n
         4. Pandas groupby,agg,max,min,mean,mode,median.\n
         5. Walkthrough some Mongodb concept.""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-The dataset describe the india census data according to state-wise
-Need to analyse the data and find the unemployment in statewise. 
-''')
+
     
 def Sales_insight():
     st.header("Sales insight")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Sales_Insight")#github link
     st.header("Explaination")
-    st.markdown("""The project is taken from API and the Sales insight data which has
-     Multiple csv with the column name of Order ID,Product,Quantity Ordered,Price Each,Order Date,Purchase Address.\n
+    st.markdown("""In this project I taken some Sales data and provide insight on those data.\n
      I have performed data cleaning process like\n
-     1.merge the multiple csv to one csv file\n
-     2.type casting the datatype\n
-     3.use some visualization\n""")
-    st.markdown("""using pandas and matplotlib library in python and you can see the source code on my github account""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-The dataset describe the Sales according to every month 
-Need to analyse the data and find how the sales is according to the price of the product.
-''')
+     1. Merge the multiple csv to one csv file\n
+     2. Used some visualization technique\n""")
+
     
 def DataBase_Management():
     st.header("DataBase Management")
@@ -46,7 +35,6 @@ def DataBase_Management():
      1.Creating a new database in MySQL server and adding data file\n
      2.Creating a new database in NoSQL(MongoDB) server and add data file\n
      3.Retrive the data from the NoSQL(MongoDB) server and adding it into a MySQL server\n""")
-    st.markdown("""using pandas and matplotlib library in python and you can see the source code on my github account""")
     st.sidebar.header("Description:")
     st.sidebar.markdown('''
 The process describe the creating new database , tabels , collections , coverting into dataframe and converting into dictionary.
@@ -57,41 +45,23 @@ def Registration():
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Registration")#github link
     st.header("Explaination")
-    st.markdown("""This project is given by GUVI institution and it has to be done using python
-     under the concept of File handling
-     i have seprate the process like\n
-     1.First user to register with username and password 
-     (username and password want to check if it is valid or not with some criteria)
-     then save it in the text file\n
-     2.Login with the valid username and password and check whether the username and
-      password are in the file or not if not go to the registration \n
-     3.Forget password if the user click on forget pasword two thing to do\n
-     A)Retrive the data with the username itself\n
-     B)Provide new password and replace the new password with the 
-     usernamme in the file """)
-    st.markdown("""used python code and you can see the source code on my github account""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-    The project is to create a registration form using python code 
-    with a concept of file handling,The Jupyter notebook link 
-    and full explaination is given in the main page''' )   
-    
+    st.markdown("""This project given to me by Guvi Institution as an assessment.\n
+     In This task I Define three Main function:\n
+     1. Registeration.\n
+     2. Log In\Off.\n
+     3. Forget Passsword.""")
+
 def Netflix_data():
     st.header("Netflix Data Insight")
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Netflix_Dataset ")#github link
     st.header("Explaination")
-    st.markdown("""The project I have taken from API and the Netflix data has
-     Show_Id,Category,Title,Director,Cast,Country,Release_Date,Rating,Duration,Type,Description.\n
+    st.markdown("""In this project I have taken some Netflix data and did some insight.\n
      I have performed data cleaning process like\n
      1. Handling the missing value\n
      2. Duplicate handling\n
      3. Datetime function\n""")
-    st.markdown("""using pandas library in python and you can see the source code on my github account""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-The dataset describe the Netflix data according to username
-Need to analyse the data and find how many people are subscribed ''')
+
     
 def College_Data():
     st.header("College Data Insight")
@@ -125,10 +95,8 @@ def E_Mail():
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/E-Mail%20Verification")
     st.header("Explaination")
-    st.markdown("""In this project I created and train the Machine learning Model to verify the incoming Mail 
-                    i.e in this case an user input and report whether it is Spam or Not-Spam.\n
-     I have performed data preprocessing like\n
-     1.Created a column using one hot encoding\n
+    st.markdown("""In this project I created and train the Machine learning Model to verify the incoming Mail .\n
+     I have performed these data preprocessing as follows:\n
      2.Split the data into Train and Test datasets\n
      3.Using MultinomialNB model form sklearn.naive_bayes for prediction \n
      4.Creating a model which Accepts user input and determine wether it is Spam or Not Spam""")
@@ -139,7 +107,7 @@ def Credit_Card():
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/Credit%20Card%20Fraud%20Detection")
     st.header("Explaination")
     st.markdown("""In this project I created and train the Machine learning Model for Credit Card Fraud Detection using Logistic Regression.\n
-     I have performed data preprocessing like\n
+    I have performed these data preprocessing as follows:\n
      1.Split the data into Train and Test datasets.\n
      2.Using RandomUnderSampler from imblearn.under_sampling.\n
      3.Using Logistic Regression model form sklearn.linear_model for prediction.\n""")
@@ -150,7 +118,7 @@ def Oil_Price():
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/Oil%20Price%20Prediction")
     st.header("Explaination")
     st.markdown("""In this project I created and train the Machine learning Model for Oil Price Prediction using Linear Regression.\n
-     I have performed data preprocessing like\n
+     I have performed these data preprocessing as follows:\n
      1.Split the data into Train and Test datasets\n
      2.Using Linear Regression model form sklearn.linear_model for prediction\n""")
     
@@ -164,8 +132,6 @@ Data_analysis_funcs = {
     "Census_data": Census_Data,
     "Sales_insight": Sales_insight,
     "Netflix_data" : Netflix_data,
-    
-    
 }
 
 def Data_analysis():
