@@ -95,7 +95,7 @@ def E_Mail():
     st.subheader('Github link')
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/E-Mail%20Verification")
     st.header("Explaination")
-    st.markdown("""In this project I created and train the Machine learning Model to verify the incoming Mail .\n
+    st.markdown("""In this project I created and train the Machine learning Model for verifying E-Mail .\n
      I have performed these data preprocessing as follows:\n
      2.Split the data into Train and Test datasets\n
      3.Using MultinomialNB model form sklearn.naive_bayes for prediction \n
