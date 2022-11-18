@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(page_title="Mohanraj.E Data Science Project")
 
 # Data Analysis function
 def Census_Data():
