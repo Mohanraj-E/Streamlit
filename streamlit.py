@@ -191,7 +191,8 @@ datascience={
     "Data analysis" : Data_analysis,
     "Machine Learning" : Machine_learning,
     }
-st.sidebar.header("Data Science Project")
+st.sidebar.header("MOHANRAJ E")
+st.sidebar.subheader('Data Science Project')
 st.sidebar.markdown("sdcbahjcvbajhgcfdvbhcdvg")
 selected_page = st.sidebar.selectbox("Select the topic",datascience.keys())
 datascience[selected_page]() 
