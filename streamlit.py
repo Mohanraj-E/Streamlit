@@ -190,9 +190,13 @@ def Machine_learning():
 datascience={
     "Data analysis" : Data_analysis,
     "Machine Learning" : Machine_learning,
+    "Natural language Processing" : NLP
     }
-st.sidebar.header("MOHANRAJ E")
+st.sidebar.header("PORTFOLIO")
+st.sidebar.markdown("""Hello, This is Mohanraj E Aspirant to be an Data Scientist.\n
+                    Seeking to advance my career in the Booming field of Data Science. 
+                    Have a strong analytical, programming and communication skills to succeed in this field.\n
+                    These are some of the project I have done to hone my skills.""")
 st.sidebar.subheader('Data Science Project')
-st.sidebar.markdown("sdcbahjcvbajhgcfdvbhcdvg")
 selected_page = st.sidebar.selectbox("Select the topic",datascience.keys())
 datascience[selected_page]() 
