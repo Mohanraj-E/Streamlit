@@ -139,17 +139,16 @@ def Twitter_Sentiment_Analysis():
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/TWITTER_SENTIMENT_ANALYSIS")
     st.header("Explanation")
     st.markdown("""The following project is about analyzing the sentiments of tweets on social networking website ‘Twitter’.\n
-                    The dataset for this project is scraped from Twitter. It contains 1,600,000 tweets extracted using Twitter API. 
-                    It is a labeled dataset with tweets annotated with the sentiment (0 = negative, 2 = neutral, 4 = positive).\n
-
-                    It contains the following 6 fields:\n
-                        target: the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive).\n
-                        ids: The id of the tweet.\n
-                        date: The date of the tweet (Sat May 16 23:58:44 UTC 2009).\n
-                        flag: The query. If there is no query, then this value is NO_QUERY.\n
-                        user: The user that tweeted.\n
-                        text: The text of the tweet.\n
-                    Designed a classification model that correctly predicts the polarity of the tweets provided in the dataset..\n""")
+    The dataset for this project is scraped from Twitter. It contains 1,600,000 tweets extracted using Twitter API. 
+    It is a labeled dataset with tweets annotated with the sentiment (0 = negative, 2 = neutral, 4 = positive).\n
+    It contains the following 6 fields:\n
+        target: the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive).\n
+        ids: The id of the tweet.\n
+        date: The date of the tweet (Sat May 16 23:58:44 UTC 2009).\n
+        flag: The query. If there is no query, then this value is NO_QUERY.\n
+        user: The user that tweeted.\n
+        text: The text of the tweet.\n
+    Designed a classification model that correctly predicts the polarity of the tweets provided in the dataset..\n""")
     
 # Selecting the Data Analysis Project    
 Data_analysis_funcs = {
