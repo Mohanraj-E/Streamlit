@@ -190,7 +190,6 @@ def Machine_learning():
 datascience={
     "Data analysis" : Data_analysis,
     "Machine Learning" : Machine_learning,
-    "Natural language Processing" : NLP
     }
 st.sidebar.header("PORTFOLIO")
 st.sidebar.markdown("""Hello, This is Mohanraj E Aspirant to be an Data Scientist.\n
