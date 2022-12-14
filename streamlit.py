@@ -193,8 +193,8 @@ datascience={
     }
 st.sidebar.header("PORTFOLIO")
 st.sidebar.markdown("Hello, This is Mohanraj E Aspirant to be an Data Scientist.")
-st.sidebar.markdown(" Seeking to advance my career in the Booming field of Data Science. Have a strong analytical, programming and communication skills to succeed in this field.\n
-                    These are some of the project I have done to hone my skills.")
+st.sidebar.markdown(" Seeking to advance my career in the Booming field of Data Science. Have a strong analytical, programming and communication skills to succeed in this field.")
+st.sidebar.markdown("These are some of the project I have done to hone my skills.")
 st.sidebar.subheader('Data Science Project')
 selected_page = st.sidebar.selectbox("Select the topic",datascience.keys())
 datascience[selected_page]() 
