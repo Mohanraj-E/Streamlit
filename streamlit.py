@@ -192,7 +192,7 @@ datascience={
     "Machine Learning" : Machine_learning,
     }
 st.sidebar.header("PORTFOLIO")
-st.sidebar.markdown("""Hello, This is Mohanraj E Aspirant to be an Data Scientist.\n
+st.sidebar.markdown("""Hello, This is Mohanraj E Aspirant to be an Data Scientist.
                     Seeking to advance my career in the Booming field of Data Science. 
                     Have a strong analytical, programming and communication skills to succeed in this field.\n
                     These are some of the project I have done to hone my skills.""")
