@@ -166,6 +166,20 @@ def Twitter_Sentiment_Analysis():
         user: The user that tweeted.\n
         text: The text of the tweet.\n
     Designed a classification model that correctly predicts the polarity of the tweets provided in the dataset..\n""")
+ 
+def LDA():
+    st.header("Topic Modeling LDA Model")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Natural%20Language%20Processing/Topic%20Modeling")#github link
+    st.header("Explanation")
+    st.markdown("""LDA - Latent Dirichlet Allocation\n
+    In this Project I have taken a Twitter dataset try to find revelent topic using LDA Model.\n
+        1.Reading and Cleaning the Twitter dataset Text Column.\n
+        2.Removing StopWords, Punctuation and Tokenizing the data.\n
+        3.Mapping the word_id to a token using id2word.\n
+        4.Building LDA Model and printing revelant Topics.\n""")
+
+    
     
 # Selecting the Data Analysis Project    
 Data_analysis_funcs = {
@@ -203,15 +217,25 @@ def Machine_learning():
     Ml_Choice = st.sidebar.selectbox("Select the Project", Machine_learnings_funcs.keys())
     Machine_learnings_funcs[Ml_Choice]()
     
+    
+# Selecting the Machine Learning Project
+NLP_funcs = {
+    "Topic Modeling": LDA    
+}
 
+def Machine_learning():
+    st.sidebar.header("Natural Language Processing Project") 
+    Ml_Choice = st.sidebar.selectbox("Select the Project", NLP_funcs.keys())
+    Machine_learnings_funcs[Ml_Choice]()
     
 # Selecting the Topic
 datascience={
     "Data analysis" : Data_analysis,
     "Machine Learning" : Machine_learning,
+    "Natural Language Processing" : NLP
     }
 st.sidebar.header("PORTFOLIO")
-st.sidebar.markdown("Hello, This is Mohanraj E Aspirant to be an Data Scientist.")
+st.sidebar.markdown("Hello, This is Mohanraj E  Aspirant to be an Data Scientist.")
 st.sidebar.markdown(" Seeking to advance my career in the Booming field of Data Science. Have a strong analytical, programming and communication skills to succeed in this field.")
 st.sidebar.markdown("These are some of the project I have done to hone my skills.")
 st.sidebar.subheader('Data Science Project')
