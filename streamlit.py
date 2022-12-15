@@ -225,8 +225,8 @@ NLP_funcs = {
 
 def NLP():
     st.sidebar.header("Natural Language Processing Project") 
-    Ml_Choice = st.sidebar.selectbox("Select the Project", NLP_funcs.keys())
-    Machine_learnings_funcs[Ml_Choice]()
+    NLP_Choice = st.sidebar.selectbox("Select the Project", NLP_funcs.keys())
+    NLP_funcs[NLP_Choice]()
     
 # Selecting the Topic
 datascience={
