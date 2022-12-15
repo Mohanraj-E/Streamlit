@@ -87,7 +87,24 @@ def Student_Data_Insight():
      2.Aggregate.\n
      3.Projection\n""")
     
+def Influencer_Data():
+    st.header("Influencer Data Analysis")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Influencer_Data_Analysis")#github link
+    st.header("Explanation")
+    st.markdown("""The following questions are explained based on the given data set:\n
+    1. Are there any correlated features in the given dataset? If yes, state the correlation coefficient of the pair of features which are highly correlated.\n
+    2. What is the frequency distribution of the following features? ● Influence Score ● Followers ● Posts\n
+    3. Which country houses the highest number of Instagram Influencers? Please show the count of Instagram influencers in different countries using barchart.\n
+    4. Who are the top 10 influencers in the given dataset based on the following features ● Followers ● Average likes ● Total Likes\n
+    5. Describe the relationship between the following pairs of features using a suitable graph ● Followers and Total Likes ● Followers and Influence Score ● Posts and Average likes ● Posts and Influence Score\n""")
     
+def Covid_19_Insght():
+    st.header("Covid-19 Data Insight")
+    st.subheader('Github link')
+    st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Data%20Analysis/Covid_19")#github link
+    st.header("Explanation")
+    st.markdown("""In this Project I analysed Global Covid-19 Affected, Death and Recovery Rate and used some visualization technique to represent the datasets.""")
     
     
 # Machine Learning Function
@@ -152,13 +169,15 @@ def Twitter_Sentiment_Analysis():
     
 # Selecting the Data Analysis Project    
 Data_analysis_funcs = {
+    "Influencer Data Analysis" : Influencer_Data,
+    "Covid-19 Data Insight" : Covid_19_Insght,
     "College_Data" : College_Data,
     "DataBase Management": DataBase_Management,
     "Student Data Insight" : Student_Data_Insight,
     "Registeration_Python": Registration,
     "Census_data": Census_Data,
     "Sales_insight": Sales_insight,
-    "Netflix_data" : Netflix_data,
+    "Netflix_data" : Netflix_data
 }
 
 def Data_analysis():
