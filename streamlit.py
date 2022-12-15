@@ -223,7 +223,7 @@ NLP_funcs = {
     "Topic Modeling": LDA    
 }
 
-def Machine_learning():
+def NLP():
     st.sidebar.header("Natural Language Processing Project") 
     Ml_Choice = st.sidebar.selectbox("Select the Project", NLP_funcs.keys())
     Machine_learnings_funcs[Ml_Choice]()
@@ -232,8 +232,10 @@ def Machine_learning():
 datascience={
     "Data analysis" : Data_analysis,
     "Machine Learning" : Machine_learning,
-    "Natural Language Processing" : NLP
+    "Natural Language Processing" : NLP,
     }
+
+
 st.sidebar.header("PORTFOLIO")
 st.sidebar.markdown("Hello, This is Mohanraj E  Aspirant to be an Data Scientist.")
 st.sidebar.markdown(" Seeking to advance my career in the Booming field of Data Science. Have a strong analytical, programming and communication skills to succeed in this field.")
