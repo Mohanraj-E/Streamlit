@@ -129,9 +129,9 @@ def Bitcoin_Prediction():
     st.write("https://github.com/Mohanraj-E/Data-Science-Projects/tree/main/Machine%20Learning/Bitcoin%20Price%20Predictions")
     st.header("Explanation")
     st.markdown("""This Following process are all done in this project:\n
-                    1. Reading, Cleaning and Converting the Data into more Understandable Way.\n
-                    2. Splitting the dataset and Trainning the splitted data into the Linear Regression Model.\n
-                    3. Calculating K-Fold Cross_Val_Score to check wether the model Works Perfectly.\n""")
+    1. Reading, Cleaning and Converting the Data into more Understandable Way.\n
+    2. Splitting the dataset and Trainning the splitted data into the Linear Regression Model.\n
+    3. Calculating K-Fold Cross_Val_Score to check wether the model Works Perfectly.\n""")
     
 def Twitter_Sentiment_Analysis():
     st.header("Twitter Sentiment Analysis")
