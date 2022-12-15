@@ -237,7 +237,7 @@ datascience={
 
 
 st.sidebar.header("PORTFOLIO")
-st.sidebar.markdown("Hello, This is Mohanraj E  Aspirant to be an Data Scientist.")
+st.sidebar.markdown("Hi, This is Mohanraj  Aspirant to be an Data Scientist.")
 st.sidebar.markdown(" Seeking to advance my career in the Booming field of Data Science. Have a strong analytical, programming and communication skills to succeed in this field.")
 st.sidebar.markdown("These are some of the project I have done to hone my skills.")
 st.sidebar.subheader('Data Science Project')
